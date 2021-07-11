@@ -1,0 +1,33 @@
+#Szczegółowa dokumentacja znajduje się na https://github.com/MyCraft-Studio/ZnajdzSerwerPlugin/wiki
+#Pobieraj aktualizacje tylko i wyłącznie z powyższego linku
+settings:
+  #Adres IP Twojego serwera na ZnajdzSerwer.pl
+  #Jeżeli będzie nieprawidłowy, nie będzie można odebrać nagród
+  address: "znajdzserwer.pl"
+  #Lista komend, jakie zostaną wykonane podczas odbierania nagrody za polubienie (jeżeli będzie wszystko poprawnie)
+  #Zmienna %player% to nick gracza, który wywołał komendę
+  rewardCommands:
+    - 'eco give %player% 200'
+    - 'bc %player% dał like serwerowi na znajdzserwer.pl!'
+  #Jak często można używać komendy?
+  #Czas podawany w sekundach
+  cooldown: 30
+  #Jak często zapisywać dane do pliku?
+  #Czas podawany w sekundach
+  saveData: 600
+
+messages:
+  #Prefix pojawia się przed każdą wiadomością
+  prefix: "&7[&6&lZnajdzSerwer.pl&7] "
+  #Uprawnienie do wywołania komendy /dajlajka - znajdzserwer.use
+  noPerm: "&cNie masz uprawnień do tej komendy!"
+  #Treść podczas wystąpienia błędu, numer błędu pojawi się w konsoli
+  connectError: "&cWystapił problem podczas wykonania zapytania. Skontaktuj się z adminem!"
+  #%time% wyświetli liczbę sekund
+  cooldownError: "&cMożesz wywołać komendę dopiero za %time% sekund"
+  #Wiadomość, gdy gracz nie polubił serwera
+  noLiked: "&cNie polubiłeś jeszcze serwera! Wejdź na ZnajdzSerwer.pl i polub go!"
+  #%date% wyświetli datę kiedy można odebrać nagroda. Format to rok-miesiąc-dzień godzina:minuta:sekunda
+  liked: "&cMożesz odebrać nagrodę za polubienie serwera ponownie dopiero %date%"
+  #Treść gdy gracz da lajka poprawnie i odbierze nagrodę
+  success: "&aOtrzymałeś nagrodę za polubienie serwera!"

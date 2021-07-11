@@ -1,0 +1,22 @@
+name: ZnajdzSerwerPlugin
+version: 1.0.0
+description: ZnajdzSerwerPlugin by Mycraft Studio
+author: Mycraft Studio
+main: pl.znajdzserwer.ZnajdzSerwerPlugin.Main
+commands:
+  znajdzserwer:
+    aliases: [odbierzzalajka, znajdzserwerodbierz]
+    permission: znajdzserwer.use
+    description: Komenda, która pozwala odebrać nagordy za polubienie serwera na ZnajdzSerwer.pl
+permissions:
+  znajdzserwer.*:
+    description: Dostęp do wszystkich uprawnień
+    children:
+      znajdzserwer.use: true
+      znajdzserwer.cooldown.bypass: true
+  znajdzserwer.use:
+    description: Możliwość użycia komendy do odbioru nagrody za polubienie serwera
+    default: op
+  znajdzserwer.cooldown.bypass:
+    description: Pomija cooldown na używacie komendy do odbioru nagrody
+    default: op
