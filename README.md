@@ -9,4 +9,6 @@ Wtyczka jest bezpieczna, nie zawiera żadnych dodatkowych funkcji które mogłyb
 - Dostęp do FTP (musisz umieścić plik w katalogu `plugins`)
 - Spigot/Paperspigot/Tuinity w wersji 1.8 lub wyższej
 
+### [KLIKNIJ, ABY POBRAĆ PLUGIN](https://github.com/MyCraft-Studio/ZnajdzSerwerPlugin/releases)
+
 ![ZnajdzSerwer.pl logo](https://znajdzserwer.pl/assets/imgs/logo.svg)
